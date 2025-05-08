@@ -15,8 +15,6 @@ if (isset($_POST['spin'])) { // Verifica se o botão "Girar" foi pressionado
     }
 }
 ?>
-
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres para evitar problemas com acentos -->
