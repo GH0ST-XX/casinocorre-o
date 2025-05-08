@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Caça Níquel Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slot-machine">
+        <h1>🎰 Jackpot</h1>
+        <div class="reels">
+            <span id="reel1"></span>
+            <span id="reel2"></span>
+            <span id="reel3"></span>
+        </div>
+        <button id="spinButton">Girar</button>
+        <p class="message" id="message"></p>
+    </div>
 
+    <script>
+        const symbols = ['🍒', '🍋', '🔔', '⭐', '🍇', '💎'];
+        const reel1Display = document.getElementById('reel1');
+        const reel2Display = document.getElementById('reel2');
+        const reel3Display = document.getElementById('reel3');
+        const spinButton = document.getElementById('spinButton');
+        const messageDisplay = document.getElementById('message');
+
+        // Inicializa os rolos com símbolos aleatórios ou placeholders
+        function initializeReels() {
+            reel1Display.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            reel2Display.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            reel3Display.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            messageDisplay.textContent = "Clique em Girar!";
+        }
+
+        spinButton.addEventListener('click', () => {
+            // Simula o giro - seleciona aleatoriamente os símbolos
+            const r1 = symbols[Math.floor(Math.random() * symbols.length)];
+            const r2 = symbols[Math.floor(Math.random() * symbols.length)];
+            const r3 = symbols[Math.floor(Math.random() * symbols.length)];
+
+            // Exibe os símbolos sorteados
+            reel1Display.textContent = r1;
+            reel2Display.textContent = r2;
+            reel3Display.textContent = r3;
+
+            // Verifica a condição de vitória
+            if (r1 === r2 && r2 === r3) {
+                messageDisplay.textContent = "🎉 Você ganhou! 🎉";
+            } else {
+                messageDisplay.textContent = "Tente novamente!";
+            }
+        });
+
+        // Inicializa os rolos ao carregar a página
+        initializeReels();
+    </script>
+</body>
+</html>
