@@ -1,0 +1,46 @@
+body {
+    background-color: #121212; /* Define a cor de fundo da página como um tom escuro */
+    color: #fff; /* Define a cor do texto como branco para contraste */
+    font-family: Arial, sans-serif; /* Usa Arial como fonte padrão, com fallback para sans-serif */
+    text-align: center; /* Centraliza todo o conteúdo do corpo */
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 40px; /* Adiciona um espaçamento interno ao redor do conteúdo */
+}
+
+.slot-machine {
+    background-color: #222; /* Define a cor de fundo da máquina caça-níquel */
+    padding: 30px; /* Adiciona um espaçamento interno para melhor organização */
+    border-radius: 15px; /* Arredonda as bordas do contêiner da máquina */
+    display: inline-block; /* Mantém o bloco inline para posicionamento central */
+    box-shadow: 0 0 20px #ffcc00; /* Adiciona uma sombra dourada ao redor do bloco para efeito luminoso */
+}
+
+.reels {
+    font-size: 60px; /* Define um tamanho grande para os símbolos */
+    margin: 20px 0; /* Adiciona um espaçamento acima e abaixo dos símbolos */
+}
+
+.reels span {
+    margin: 0 15px; /* Define espaçamento horizontal entre os símbolos */
+    display: inline-block; /* Mantém os símbolos como elementos inline */
+    min-width: 60px; /* Garante um tamanho mínimo para os símbolos, mantendo uniformidade */
+}
+
+button {
+    padding: 10px 30px; /* Adiciona espaçamento interno para tornar o botão mais clicável */
+    font-size: 18px; /* Define um tamanho de fonte legível */
+    background-color: #ffcc00; /* Usa um tom dourado para chamar atenção */
+    border: none; /* Remove a borda do botão */
+    border-radius: 8px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+    font-weight: bold; /* Torna o texto do botão mais destacado */
+}
+
+button:hover {
+    background-color: #ffdb4d; /* Altera a cor ao passar o mouse para um tom mais claro */
+}
+
+.message {
+    font-size: 20px; /* Define um tamanho de fonte apropriado para a mensagem */
+    margin-top: 20px; /* Adiciona espaçamento acima da mensagem */
+}
